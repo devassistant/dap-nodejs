@@ -1,5 +1,5 @@
-fullname: Node.JS application
-description: 'Node.JS assistant will help you create a basic Node.JS application and install its dependencies.'
+fullname: Node.js application
+description: 'Node.js assistant will help you create a basic Node.js application and install its dependencies.'
 
 dependencies:
   - use: super.dependencies
@@ -100,10 +100,10 @@ run:
 - cl: cp -r *appnodejs "$basename"
 - dda_c: "$basename"
 - cl: cd "$basename"
-- log_i: 'Creating Node.JS project $basename in $dirname ...'
+- log_i: 'Creating Node.js project $basename in $dirname ...'
 - use: git_init_add_commit.run
 - if defined $github:
   - github: create_and_push
-- log_i: 'Node.JS project $basename in $dirname has been created.'
+- log_i: 'Node.js project $basename in $dirname has been created.'
 - log_i: 'To run the application use: node app.js'
-- log_i: 'For more information about Node.JS project visit https://nodejs.org'
+- log_i: 'For more information about Node.js project visit https://nodejs.org'
