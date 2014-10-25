@@ -1,5 +1,5 @@
-fullname: Express.JS - web framework
-description: 'Express.JS assistant will help you create a basic web application with Express framework and install its dependencies.'
+fullname: Express - web framework
+description: 'Express assistant will help you create a basic web application with Express framework and install its dependencies.'
 
 dependencies:
   - use: super.dependencies
@@ -108,7 +108,7 @@ run:
 - $basename~: $(basename "$name")
 - if $(test -e "$name"):
   - log_e: '$name already exists, cannot proceed.'
-- log_i: 'Creating Express.JS project $basename in $dirname ...'
+- log_i: 'Creating Express project $basename in $dirname ...'
 - cl: express --css stylus --ejs "$basename"
 - dda_c: $basename
 - cl: cd "$basename"
@@ -116,6 +116,6 @@ run:
 - use: git_init_add_commit.run
 - if defined $github:
   - github: create_and_push
-- log_i: 'Express.JS project $basename in $dirname has been created.'
+- log_i: 'Express project $basename in $dirname has been created.'
 - log_i: 'To run the application use: node app'
-- log_i: 'For more information about Express.JS project visit http://expressjs.com'
+- log_i: 'For more information about Express project visit http://expressjs.com'
