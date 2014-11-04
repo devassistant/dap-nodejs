@@ -7,6 +7,7 @@ summary: Node.js assistants
 bugreports: https://github.com/devassistant/dap-nodejs/issues
 dependencies:
   - common_args
+  - git
   - vim
 description: |
     Kickstarts new Node.js projects with or without the Express framework.

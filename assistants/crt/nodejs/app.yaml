@@ -101,7 +101,7 @@ run:
 - dda_c: "$basename"
 - cl: cd "$basename"
 - log_i: 'Creating Node.js project $basename in $dirname ...'
-- use: git_init_add_commit.run
+- use: git.init_add_commit.run
 - if defined $github:
   - github: create_and_push
 - log_i: 'Node.js project $basename in $dirname has been created.'
