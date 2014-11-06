@@ -95,10 +95,12 @@ files:
     source: app.js
 
 run:
-- $dirname~: $(dirname "$name")
-- $basename~: $(basename "$name")
-- if $(test -e "$name"):
-  - log_e: '$name already exists, cannot proceed.'
+- setup_project_dir:
+    from: $name
+    on_existing: fail
+    create_topdir: true
+    contdir_var: dirname
+    topdir_var: basename
 - cl: cp -r *appnodejs "$basename"
 - dda_c: "$basename"
 - cl: cd "$basename"
