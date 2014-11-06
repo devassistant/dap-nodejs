@@ -1,5 +1,5 @@
 package_name: nodejs
-version: 0.10.0dev
+version: 0.10.0
 license: GPLv2+
 authors: [Petr Hracek <phracek@redhat.com>, Bohuslav Kabrda <bkabrda@redhat.com>]
 homepage: https://github.com/devassistant/dap-nodejs
@@ -8,6 +8,7 @@ bugreports: https://github.com/devassistant/dap-nodejs/issues
 dependencies:
   - common_args
   - git
+  - github
   - vim
 description: |
     Kickstarts new Node.js projects with or without the Express framework.
