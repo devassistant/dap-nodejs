@@ -76,7 +76,8 @@ dependencies:
     - 'nodejs-tunnel-agent'
     - 'nodejs-uid-number'
     - 'nodejs-which'
-    - 'v8', 'v8-devel'
+    - 'v8'
+    - 'v8-devel'
   #- npm: ['glob']
 
 dependencies_vim:
