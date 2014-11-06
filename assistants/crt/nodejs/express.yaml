@@ -106,11 +106,12 @@ args:
     use: github
 
 run:
-- $dirname~: $(dirname "$name")
-- $basename~: $(basename "$name")
-- if $(test -e "$name"):
-  - log_e: '$name already exists, cannot proceed.'
-- log_i: 'Creating Express project $basename in $dirname ...'
+- setup_project_dir:
+    from: $name
+    on_existing: fail
+    create_topdir: false
+    contdir_var: dirname
+    topdir_var: basename
 - cl: express --css stylus --ejs "$basename"
 - dda_c: $basename
 - cl: cd "$basename"
