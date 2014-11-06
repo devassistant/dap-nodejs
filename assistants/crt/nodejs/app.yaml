@@ -92,7 +92,7 @@ args:
 
 files:
   appnodejs: &appnodejs
-    source: .
+    source: app.js
 
 run:
 - $dirname~: $(dirname "$name")
