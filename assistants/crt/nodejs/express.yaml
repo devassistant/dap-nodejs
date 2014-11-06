@@ -3,94 +3,96 @@ description: 'Express assistant will help you create a basic web application wit
 
 dependencies:
   - use: super.dependencies
-  - rpm: ['node-gyp']
-  - rpm: ['nodejs-abbrev']
-  - rpm: ['nodejs-ansi']
-  - rpm: ['nodejs-archy']
-  - rpm: ['nodejs-asn1']
-  - rpm: ['nodejs-assert-plus']
-  - rpm: ['nodejs-async']
-  - rpm: ['nodejs-aws-sign']
-  - rpm: ['nodejs-block-stream']
-  - rpm: ['nodejs-boom']
-  - rpm: ['nodejs-buffer-crc32']
-  - rpm: ['nodejs-bytes']
-  - rpm: ['nodejs-child-process-close']
-  - rpm: ['nodejs-chmodr']
-  - rpm: ['nodejs-chownr']
-  - rpm: ['nodejs-cmd-shim']
-  - rpm: ['nodejs-combined-stream']
-  - rpm: ['nodejs-commander']
-  - rpm: ['nodejs-config-chain']
-  - rpm: ['nodejs-connect']
-  - rpm: ['nodejs-cookie']
-  - rpm: ['nodejs-cookie-jar']
-  - rpm: ['nodejs-cookie-signature']
-  - rpm: ['nodejs-couch-login']
-  - rpm: ['nodejs-cryptiles']
-  - rpm: ['nodejs-ctype']
-  - rpm: ['nodejs-debug']
-  - rpm: ['nodejs-delayed-stream']
-  - rpm: ['nodejs-devel']
-  - rpm: ['nodejs-editor']
-  - rpm: ['nodejs-forever-agent']
-  - rpm: ['nodejs-form-data']
-  - rpm: ['nodejs-formidable']
-  - rpm: ['nodejs-fresh']
-  - rpm: ['nodejs-fstream']
-  - rpm: ['nodejs-fstream-ignore']
-  - rpm: ['nodejs-fstream-npm']
-  - rpm: ['nodejs-github-url-from-git']
-  - rpm: ['nodejs-graceful-fs']
-  - rpm: ['nodejs-hawk']
-  - rpm: ['nodejs-hoek']
-  - rpm: ['nodejs-http-signature']
-  - rpm: ['nodejs-inherits']
-  - rpm: ['nodejs-ini']
-  - rpm: ['nodejs-init-package-json']
-  - rpm: ['nodejs-json-stringify-safe']
-  - rpm: ['nodejs-keypress']
-  - rpm: ['nodejs-lockfile']
-  - rpm: ['nodejs-lru-cache']
-  - rpm: ['nodejs-methods']
-  - rpm: ['nodejs-mime']
-  - rpm: ['nodejs-minimatch']
-  - rpm: ['nodejs-mkdirp']
-  - rpm: ['nodejs-mute-stream']
-  - rpm: ['nodejs-node-uuid']
-  - rpm: ['nodejs-nopt']
-  - rpm: ['nodejs-normalize-package-data']
-  - rpm: ['nodejs-npm-registry-client']
-  - rpm: ['nodejs-npm-user-validate']
-  - rpm: ['nodejs-npmconf']
-  - rpm: ['nodejs-npmlog']
-  - rpm: ['nodejs-oauth-sign']
-  - rpm: ['nodejs-once']
-  - rpm: ['nodejs-opener']
-  - rpm: ['nodejs-osenv']
-  - rpm: ['nodejs-packaging']
-  - rpm: ['nodejs-pause']
-  - rpm: ['nodejs-promzard']
-  - rpm: ['nodejs-proto-list']
-  - rpm: ['nodejs-qs']
-  - rpm: ['nodejs-range-parser']
-  - rpm: ['nodejs-read']
-  - rpm: ['nodejs-read-installed']
-  - rpm: ['nodejs-read-package-json']
-  - rpm: ['nodejs-request']
-  - rpm: ['nodejs-retry']
-  - rpm: ['nodejs-rimraf']
-  - rpm: ['nodejs-semver']
-  - rpm: ['nodejs-send']
-  - rpm: ['nodejs-sha']
-  - rpm: ['nodejs-sigmund']
-  - rpm: ['nodejs-slide']
-  - rpm: ['nodejs-sntp']
-  - rpm: ['nodejs-tar']
-  - rpm: ['nodejs-tunnel-agent']
-  - rpm: ['nodejs-uid-number']
-  - rpm: ['nodejs-which']
-  - rpm: ['v8', 'v8-devel']
+  - rpm:
+    - 'node-gyp'
+    - 'nodejs-abbrev'
+    - 'nodejs-ansi'
+    - 'nodejs-archy'
+    - 'nodejs-asn1'
+    - 'nodejs-assert-plus'
+    - 'nodejs-async'
+    - 'nodejs-aws-sign'
+    - 'nodejs-block-stream'
+    - 'nodejs-boom'
+    - 'nodejs-buffer-crc32'
+    - 'nodejs-bytes'
+    - 'nodejs-child-process-close'
+    - 'nodejs-chmodr'
+    - 'nodejs-chownr'
+    - 'nodejs-cmd-shim'
+    - 'nodejs-combined-stream'
+    - 'nodejs-commander'
+    - 'nodejs-config-chain'
+    - 'nodejs-connect'
+    - 'nodejs-cookie'
+    - 'nodejs-cookie-jar'
+    - 'nodejs-cookie-signature'
+    - 'nodejs-couch-login'
+    - 'nodejs-cryptiles'
+    - 'nodejs-ctype'
+    - 'nodejs-debug'
+    - 'nodejs-delayed-stream'
+    - 'nodejs-devel'
+    - 'nodejs-editor'
+    - 'nodejs-forever-agent'
+    - 'nodejs-form-data'
+    - 'nodejs-formidable'
+    - 'nodejs-fresh'
+    - 'nodejs-fstream'
+    - 'nodejs-fstream-ignore'
+    - 'nodejs-fstream-npm'
+    - 'nodejs-github-url-from-git'
+    - 'nodejs-graceful-fs'
+    - 'nodejs-hawk'
+    - 'nodejs-hoek'
+    - 'nodejs-http-signature'
+    - 'nodejs-inherits'
+    - 'nodejs-ini'
+    - 'nodejs-init-package-json'
+    - 'nodejs-json-stringify-safe'
+    - 'nodejs-keypress'
+    - 'nodejs-lockfile'
+    - 'nodejs-lru-cache'
+    - 'nodejs-methods'
+    - 'nodejs-mime'
+    - 'nodejs-minimatch'
+    - 'nodejs-mkdirp'
+    - 'nodejs-mute-stream'
+    - 'nodejs-node-uuid'
+    - 'nodejs-nopt'
+    - 'nodejs-normalize-package-data'
+    - 'nodejs-npm-registry-client'
+    - 'nodejs-npm-user-validate'
+    - 'nodejs-npmconf'
+    - 'nodejs-npmlog'
+    - 'nodejs-oauth-sign'
+    - 'nodejs-once'
+    - 'nodejs-opener'
+    - 'nodejs-osenv'
+    - 'nodejs-packaging'
+    - 'nodejs-pause'
+    - 'nodejs-promzard'
+    - 'nodejs-proto-list'
+    - 'nodejs-qs'
+    - 'nodejs-range-parser'
+    - 'nodejs-read'
+    - 'nodejs-read-installed'
+    - 'nodejs-read-package-json'
+    - 'nodejs-request'
+    - 'nodejs-retry'
+    - 'nodejs-rimraf'
+    - 'nodejs-semver'
+    - 'nodejs-send'
+    - 'nodejs-sha'
+    - 'nodejs-sigmund'
+    - 'nodejs-slide'
+    - 'nodejs-sntp'
+    - 'nodejs-tar'
+    - 'nodejs-tunnel-agent'
+    - 'nodejs-uid-number'
+    - 'nodejs-which'
+    - 'v8'
+    - 'v8-devel'
   - npm: ['glob']
 
 dependencies_vim:
