@@ -34,6 +34,7 @@ dependencies:
     - 'nodejs-delayed-stream'
     - 'nodejs-devel'
     - 'nodejs-editor'
+    - 'nodejs-express'
     - 'nodejs-forever-agent'
     - 'nodejs-form-data'
     - 'nodejs-formidable'
@@ -112,6 +113,7 @@ run:
     create_topdir: false
     contdir_var: dirname
     topdir_var: basename
+- cl: cd "$dirname"
 - cl: express --css stylus --ejs "$basename"
 - dda_c: $basename
 - cl: cd "$basename"

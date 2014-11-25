@@ -101,6 +101,7 @@ run:
     create_topdir: true
     contdir_var: dirname
     topdir_var: basename
+- cl: cd "$dirname"
 - cl: cp -r *appnodejs "$basename"
 - dda_c: "$basename"
 - cl: cd "$basename"
