@@ -108,7 +108,9 @@ run:
 - log_i: 'Creating Node.js project $basename in $dirname ...'
 - use: git.init_add_commit.run
 - if defined $github:
-  - github: create_and_push
+  - github:
+    - create_and_push
+    - reponame: $basename
 - log_i: 'Node.js project $basename in $dirname has been created.'
 - log_i: 'To run the application use: node app.js'
 - log_i: 'For more information about Node.js project visit https://nodejs.org'
