@@ -111,6 +111,7 @@ run:
   - github:
     - create_and_push
     - reponame: $basename
+      login: $github
 - log_i: 'Node.js project $basename in $dirname has been created.'
 - log_i: 'To run the application use: node app.js'
 - log_i: 'For more information about Node.js project visit https://nodejs.org'
