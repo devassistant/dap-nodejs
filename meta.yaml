@@ -1,5 +1,5 @@
 package_name: nodejs
-version: 0.10.1
+version: 0.11
 license: GPLv2+
 authors: [Petr Hracek <phracek@redhat.com>, Bohuslav Kabrda <bkabrda@redhat.com>]
 homepage: https://github.com/devassistant/dap-nodejs
